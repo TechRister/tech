@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #222;
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: white;
+  border: none;
+  color: #4facfe;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00f2fe;
+}
+
+/* Categories Section */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.category-card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4facfe;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  background: #f0f0f0;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Research Section */
+#research {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+article {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  max-width: 800px;
+  background: #f9f9f9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #4facfe;
+}
+
+article p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  padding: 12px 25px;
+  background: white;
+  color: #4facfe;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    font-size: 14px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  article {
+    padding: 15px;
+  }
+}
